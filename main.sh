@@ -47,21 +47,21 @@ display_backup_operations_menu() {
 # Function to execute remove_pgp.sh
 execute_remove_pgp() {
     # Usage example: remove .pgp.txt extension from the file "example.pgp.txt" in the path "/path/to/file"
-    ./remove_pgp.sh "/path/to/file" "example.pgp.txt"
+    ./security/remove_pgp.sh "/path/to/file" "example.pgp.txt"
     log "remove_pgp.sh executed"
 }
 
 # Function to execute copy_to_remote_server.sh
 execute_copy_to_remote_server() {
     # Usage example: Copy files from "/source/path" to the remote server
-    ./copy_to_remote_server.sh "/source/path" "/destination/path" "username@remote-server-ip"
+    ./networking/copy_to_remote_server.sh "/source/path" "/destination/path" "username@remote-server-ip"
     log "copy_to_remote_server.sh executed"
 }
 
 # Function to execute rolling_backup_etc.sh
 execute_rolling_backup() {
     # Usage example: Create rolling backups
-    ./rolling_backup_etc.sh
+    ./backup/rolling_backup_etc.sh
     log "rolling_backup_etc.sh executed"
 }
 
